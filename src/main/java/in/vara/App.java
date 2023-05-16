@@ -12,5 +12,6 @@ public class App {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
         Customer cust = ctx.getBean("customer", Customer.class);
         System.out.println(cust.getCustomerGreeting());
+        System.out.println(cust.toString());
     }
 }
