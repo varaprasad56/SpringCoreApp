@@ -11,7 +11,7 @@ public class Customer {
     private String customerName;
     private String customerCity;
     private String customerGender;
-    private Double customerRating;
+    private Float customerRating;
     private String customerGreeting;
 
     @Autowired
@@ -54,11 +54,11 @@ public class Customer {
         this.customerGender = customerGender;
     }
 
-    public Double getCustomerRating() {
+    public Float getCustomerRating() {
         return customerRating;
     }
 
-    public void setCustomerRating(Double customerRating) {
+    public void setCustomerRating(Float customerRating) {
         this.customerRating = customerRating;
     }
 }
