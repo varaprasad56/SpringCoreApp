@@ -9,5 +9,9 @@
 
     <bean id="ldt" class="java.time.LocalDateTime" factory-method="now"/>
     <context:component-scan base-package="in.vara"/>
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="app"/>
+    </bean>
+
 
 </beans>

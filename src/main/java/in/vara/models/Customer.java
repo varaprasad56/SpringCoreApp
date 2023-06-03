@@ -2,11 +2,13 @@ package in.vara.models;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
 @Component("customer")
+@PropertySource("app.properties")
 public class Customer {
     private String customerName;
     private String customerCity;
